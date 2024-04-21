@@ -35,12 +35,14 @@ A project to predict whether a telco customer will churn or not
 ## About The Project
 
 ### Scenario
-Your company executives have an interest in investing in the Indian Startup Ecosystem. You have been tasked with analysing the available data from 2018 to 2021 and advice on the best course of action for the company.
+Your company executives at VodaFone have an interest reducing Customer Churn. You have to build a model that predicts customer churn to be used in preventative measures leading to reduced churn.
 
 ### Project Structure
 The project uses the CRISP-DM Framework. 
-Our first part covers the Business Understanding and external research to provide a base for our work and then we head to the second phase where we look at the Datasets we have and analyse the ecosystem fully to generate insights.
-We finalise by a conclsuion of what our analysis has uncovered and propose a course of action for the company  
+Our first part covers the Business Understanding and setting up the criteria for success.  
+we head to the second phase where we look at the Datasets we have and analyse them to understand the relationship between features and answer business questions.
+We build a model to predict the target variable and evaluate the model performance.
+We finalise by a conclsuion of the Business Impact Assessment of the model and its performance.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -54,8 +56,10 @@ These are the key libraries used in the project.
 * Pandas
 * Seaborn
 * Matplotlib
-* Thefuzz
 * PowerBI
+* SciKit Learn
+* XGBoost
+* imbLearn
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,21 +89,25 @@ This is a list things you need to run the notebook and how to install them.
 * Jupyter Notebook
 ```pip install Jupyter```
 
-* Thefuzz
-```pip install thefuzz```
+* imbLearn
+```pip install imblearn```
+
+* xgboost
+```pip install xgboost```
 
 ### Installation
 
 _Below is an example of how you can install and run the notebook. This project relies on any external dependencies or services. Internet connectivity is necessary_
 
 1. Clone the repo
-   ```git clone https://github.com/Rama-Mwenda/Indian_Ecosystem_Analysis.git```
+   ```git clone https://github.com/Rama-Mwenda/Customer_Churn.git```
    
 2. Install packages
 
-3. Download ```startup_funding.csv``` and place it in the root directory.
+3. Download ```train_data.csv``` and place it in the root directory.
 
 4. Run the notebook
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,13 +116,6 @@ _Below is an example of how you can install and run the notebook. This project r
 ## Usage
 The Analysis was deployed on a powerbi dashboard like below. The dashboard is interactive and can be used to gather insights.
 
-![Screenshot_24-3-2024_164616_app powerbi com](https://github.com/Rama-Mwenda/Indian_Ecosystem_Analysis/assets/143324676/d9cdf0ae-4b9d-44b9-a63a-5a7bb54d7481)
-
-![Screenshot_24-3-2024_164655_app powerbi com](https://github.com/Rama-Mwenda/Indian_Ecosystem_Analysis/assets/143324676/6923270c-b2c0-4a63-b9ab-559b543ecb24)
-
-![Screenshot_24-3-2024_164720_app powerbi com](https://github.com/Rama-Mwenda/Indian_Ecosystem_Analysis/assets/143324676/76837cab-9227-4a16-b34a-80e4e4ad92a7)
-
-![Screenshot_24-3-2024_164733_app powerbi com](https://github.com/Rama-Mwenda/Indian_Ecosystem_Analysis/assets/143324676/874c5a08-d375-4879-a0b5-f386252da5a3)
 
 
 
@@ -150,7 +151,7 @@ Distributed under the  GNU GENERAL PUBLIC LICENSE. See `LICENSE.txt` for more in
 
 Ramadhan Mwenda - [www.linkedin.com/in/ramadhanmwenda](www.linkedin.com/in/ramadhanmwenda) - ramadhanmwenda@azubiafrica.org
 
-Project Link: [https://github.com/Rama-Mwenda/Indian_Ecosystem_Analysis](https://github.com/Rama-Mwenda/Indian_Ecosystem_Analysis)
+Project Link: [https://github.com/Rama-Mwenda/Customer_Churn](https://github.com/Rama-Mwenda/Customer_Churn)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,8 +161,8 @@ Project Link: [https://github.com/Rama-Mwenda/Indian_Ecosystem_Analysis](https:/
  
  Resources I found helpful when building the project.
 
-* [Effective Pandas by Matt Harrison](https://www.youtube.com/watch?v=zgbUk90aQ6A&t=4084s)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Measuring your local startup ecosystem guide](https://dealroom.co/blog/measuring-local-startup-ecosystem-short-guide)
+* [Machine Learning for Absolute Beginners by coderachel](https://medium.com/@coderacheal/machine-learning-for-absolute-beginners-69ce9bb08b46)
+* [Imbalanced Data Best Practices](https://rihab-feki.medium.com/imbalanced-data-best-practices-f3b6d0999f38)
+* [Framework for Imbalanced Classification Projects](https://machinelearningmastery.com/framework-for-imbalanced-classification-projects/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
